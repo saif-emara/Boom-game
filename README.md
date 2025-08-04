@@ -1,51 +1,49 @@
 # Boom Game (C++)
 
-A simple console-based implementation of the classic "Boom" game using C++. This project demonstrates basic logic, input validation, and condition-based rules — great as a beginner-level project.
+A simple terminal-based implementation of the classic "Boom" counting game, where players must say "Boom" instead of any number that is a multiple of 5.
 
-## 🔥 Game Rules
+## 🔹 Game Rules
+- The game starts with a number.
+- The computer responds with the next number, or says **"Boom"** if it's a multiple of 5.
+- You must continue the sequence:
+  - Say the next correct number.
+  - Or say **"Boom"** if the number is a multiple of 5.
+- You lose if:
+  - You say a multiple of 5 as a number.
+  - You break the correct counting sequence.
+  - You enter invalid input.
 
-- The game starts from a user-entered number.
-- The computer responds with the next number (or says "Boom" if it’s a multiple of 5).
-- You must continue counting — unless it's a multiple of 5, then type **"Boom"**.
-- If you enter a multiple of 5 or the wrong number, you lose.
-- The game continues until the user makes a mistake.
+## 💻 Features
+- Console-based interaction.
+- Turn-based play between user and computer.
+- Input validation and instant feedback.
+- Automatic game termination on rule violation.
 
-## 📌 Features
+## 📂 File Structure
+```
+Boom-Game/
+├── BoomGame.cpp       # Main source code
+└── README.md          # Project description
+```
 
-- Validates input using `cin` and `try-catch`.
-- Identifies multiples of 5 with modulus `%`.
-- Clear turn-by-turn interaction between computer and user.
-- Loop-based gameplay with basic error handling.
-
-## 🧠 Concepts Used
-
-- Conditional logic and control flow
-- String vs number input handling
-- Functions and modular code
-- Basic use of exception handling
-
-## 🛠️ How to Run
-
-1. Save the code in a file named: `boom_game.cpp`
-2. Open a terminal in the same folder
-3. Compile the code:
+## ▶️ How to Run
+1. Open your terminal or command prompt.
+2. Compile the code using:
+   ```bash
+   g++ BoomGame.cpp -o boom
    ```
-   g++ boom_game.cpp -o boom
-   ```
-4. Run the game:
-   ```
+3. Run the program:
+   ```bash
    ./boom
    ```
 
-## 📂 File Structure
+## 🧠 What You’ll Learn
+- C++ basics: functions, loops, conditionals, and strings.
+- Input validation using `cin` and error handling.
+- Simple game logic and user interaction.
 
-```
-Boom-Game/
-├── boom_game.cpp
-└── README.md
-```
+## ✍️ Author
+**Saif Emara**  
+[GitHub](https://github.com/saif-emara) | [LinkedIn](https://www.linkedin.com/in/saif-emara-51a777377)
 
-## 🙋‍♂️ Author
-
-Made with effort by [Saif Emara](https://github.com/saif-emara) as part of a C++ project in his CS introduction semester.
-
+---
